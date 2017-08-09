@@ -1,11 +1,12 @@
-body{
-    background-color: #5958ab;
-}
-#header{
-    color:#ff902b;
+body {
+	background-color: #5958ab;
 }
 
-.jumbotron{
-    background-color: #15274b;
-    color:#c3ffe4;
+#header {
+	color: #ff902b;
+}
+
+.jumbotron {
+	background-color: #15274b;
+	color: #c3ffe4;
 }

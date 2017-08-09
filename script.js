@@ -1,5 +1,5 @@
 /*global $*/
-$(document).ready(function(){
+$("document").ready(function(){
     var allQuotes=[{quote:"Me, miss? Not by a long shot.",  author:"Caitlyn"},
     {quote:"All the world on one arrow.",  author:"Ashe"},
     {quote:"Embracing life means accepting death.",  author:"Kindred/Lamb"},
@@ -26,14 +26,13 @@ $(document).ready(function(){
     
     var min=0;
     var max=allQuotes.length-1;
-    console.log(max);
     var quoteNumber=0;
     $("#generator").click(function(){
         quoteNumber=getRandomInt(min,max);
-        console.log(quoteNumber);
         var html="<p><strong>"+allQuotes[quoteNumber].quote+"</strong></p>"+"<div><em>"+allQuotes[quoteNumber].author+"</em></div>";
         $("#quote").html(html);
-    })
+    });
+    
     // var url="https://talaikis.com/api/quotes/random/";
     // $.ajax({
     //     url:url,
